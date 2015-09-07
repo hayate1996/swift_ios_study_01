@@ -216,13 +216,36 @@ println(number1 / number2)
 
 /* 課題5 : 関数を使って変数a, 変数bを渡して足し算、引き算、掛け算、割り算をして結果を返す関数を作りましょう */
 
+func add(a:Int, b:Int) -> Int {
+    return a + b
+}
 
 
+func minus(a:Int, b:Int) -> Int {
+    return a - b
+}
 
+func multi(a:Int, b:Int) -> Int {
+    return a * b
+}
+
+func devide(a:Int, b:Int) -> Int {
+    return a / b
+}
+
+var a = 6
+var b = 2
+
+add(a, b)
+minus(a, b)
+multi(a, b)
+devide(a, b)
 
 /* 課題6 : 関数を使って課題3で作ったビューを生成し戻り値を使って変数に代入しましょう */
 
-
+func makeView3() -> UIView {
+    
+}
 
 
 /*----------------------------------------------------------------------------------*/
