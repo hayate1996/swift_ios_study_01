@@ -17,9 +17,9 @@ println("Hello, world!")
 変数
 */
 
-var hensu = 1   /* hensuは後で変更できる */
-hensu = 2
-println(hensu)
+var var_number = 1   /* var_numberは後で変更できる */
+var_number = 2
+println(var_number)
 
 
 
@@ -28,9 +28,9 @@ println(hensu)
 定数
 */
 
-let teisu = 3.14   /* teisuは変更できない */
-// teisu = 3     Error!
-println(teisu)
+let let_number = 3.14   /* let_numberは変更できない */
+// let_number = 3     Error!
+println(let_number)
 
 
 
