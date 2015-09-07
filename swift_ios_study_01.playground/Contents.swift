@@ -243,9 +243,25 @@ devide(a, b)
 
 /* 課題6 : 関数を使って課題3で作ったビューを生成し戻り値を使って変数に代入しましょう */
 
-func makeView3() -> UIView {
+func makeView_q6() -> UIView {
+    var redView = UIView(frame: CGRectMake(0, 50, 50, 50))
+    var blueView = UIView(frame: CGRectMake(50, 50, 50, 50))
+    var yellowView = UIView(frame: CGRectMake(100, 50, 50, 50))
+
+    redView.backgroundColor = UIColor.redColor()
+    blueView.backgroundColor = UIColor.blueColor()
+    yellowView.backgroundColor = UIColor.yellowColor()
+
+    var whiteView = UIView(frame: CGRectMake(0, 0, 150, 150))
+    whiteView.backgroundColor = UIColor.whiteColor()
+
+    whiteView.addSubview(redView)
+    whiteView.addSubview(blueView)
+    whiteView.addSubview(yellowView)
     
+    return whiteView
 }
 
+let preview_q6 = makeView_q6()
 
 /*----------------------------------------------------------------------------------*/
