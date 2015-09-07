@@ -12,9 +12,28 @@ Hello, world!
 println("Hello, world!")
 
 
-/*
 
+/*
+変数
 */
+
+var hensu = 1   /* hensuは後で変更できる */
+hensu = 2
+println(hensu)
+
+
+
+
+/*
+定数
+*/
+
+let teisu = 3.14   /* teisuは変更できない */
+// teisu = 3     Error!
+println(teisu)
+
+
+
 
 
 /*
@@ -97,29 +116,6 @@ rectView.addSubview(blueView)
 
 
 /*----------------------------------------------------------------------------------*/
-
-
-
-
-/*
-    変数
-*/
-
-var hensu = 1   /* hensuは後で変更できる */
-hensu = 2
-println(hensu)
-
-
-
-
-/*
-    定数
-*/
-
-let teisu = 3.14   /* teisuは変更できない */
-// teisu = 3     Error!
-println(teisu)
-
 
 
 
