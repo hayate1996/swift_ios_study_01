@@ -84,7 +84,7 @@ blueView.backgroundColor = UIColor.blueColor()
 rectView.addSubview(blueView)
 
 
-/* 課題3：赤・青・黄色の50x50のビューと白の150x150のビューを作り、赤・青・黄色が並ぶように白ビューの上に乗せましょう */
+/* 課題3：赤・青・黄色の50x50のビューと白の150x150のビューを作り、赤・青・黄色が横に並ぶように白ビューの上に乗せましょう */
 
 
 
@@ -181,7 +181,7 @@ var number2 = 2
 println(number1 * number2)
 println(number1 / number2)
 
-/* 課題5 : 関数を使って変数a, 変数bを渡して */
+/* 課題5 : 関数を使って変数a, 変数bを渡して足し算、引き算、掛け算、割り算をして結果を返す関数を作りましょう */
 
 
 
