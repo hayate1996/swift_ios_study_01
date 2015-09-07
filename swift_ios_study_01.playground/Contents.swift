@@ -57,7 +57,7 @@ let preview_q1 = view_q1
 
 
 var view_q2 = UIView(frame: CGRectMake(30, 50, 100, 100))
-view_q2.backgroundColor = UIColor.redColor()
+view_q2.backgroundColor = UIColor.yellowColor()
 let preview_q2 = view_q2
 
 
