@@ -46,9 +46,11 @@ let preview2 = blackView
 
 
 
-/* 課題1：(0,0)の位置に縦50,横200のビューを表示してみましょう */
+/* 課題1：(0,0)の位置に縦50,横200の赤いビューを表示してみましょう */
 
-
+var view_q1 = UIView(frame: CGRectMake(0, 0, 200, 50))
+view_q1.backgroundColor = UIColor.redColor()
+let preview_q1 = view_q1
 
 
 /* 課題2：(30,50)の位置に縦100,横100,黄色(yellowColor)のビューを表示してみましょう */
