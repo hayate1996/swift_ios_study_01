@@ -6,15 +6,33 @@ import UIKit
 
 
 /*
-Hello, world!
+    Hello, world!
 */
 
 println("Hello, world!")
 
 
 /*
-
+    変数
 */
+
+var var_number = 1   /* var_numberは後で変更できる */
+var_number = 2
+println(var_number)
+
+
+
+
+/*
+    定数
+*/
+
+let let_number = 3.14   /* let_numberは変更できない */
+// let_number = 3     Error!
+println(let_number)
+
+
+
 
 
 /*
@@ -46,11 +64,13 @@ let preview2 = blackView
 
 
 
+
 /* 課題1：(0,0)の位置に縦50,横200の赤いビューを表示してみましょう */
 
 var view_q1 = UIView(frame: CGRectMake(0, 0, 200, 50))
 view_q1.backgroundColor = UIColor.redColor()
 let preview_q1 = view_q1
+
 
 
 /* 課題2：(30,50)の位置に縦100,横100,黄色(yellowColor)のビューを表示してみましょう */
@@ -69,7 +89,7 @@ let preview_q2 = view_q2
 
 
 /*
-ビューに別なビューを重ねる
+    ビューに別のビューを重ねる
 */
 
 
@@ -108,6 +128,7 @@ view_q3_white.addSubview(view_q3_yellow)
 let preview_q3 = view_q3_white
 
 
+
 /* 課題4：150x150の白ビューの真ん中に、100x100の黄色ビューを乗せて更にその真ん中に、 50x50の赤ビューを乗せましょう */
 
 var view_q4_red = UIView(frame: CGRectMake(0, 0, 50, 50))
@@ -130,29 +151,6 @@ let preview_q4 = view_q4_white
 
 
 /*----------------------------------------------------------------------------------*/
-
-
-
-
-/*
-    変数
-*/
-
-var hensu = 1   /* hensuは後で変更できる */
-hensu = 2
-println(hensu)
-
-
-
-
-/*
-    定数
-*/
-
-let teisu = 3.14   /* teisuは変更できない */
-// teisu = 3     Error!
-println(teisu)
-
 
 
 
@@ -214,6 +212,8 @@ var number2 = 2
 println(number1 * number2)
 println(number1 / number2)
 
+
+
 /* 課題5 : 関数を使って変数a, 変数bを渡して足し算、引き算、掛け算、割り算をして結果を返す関数を作りましょう */
 
 func add(a:Int, b:Int) -> Int {
@@ -241,6 +241,8 @@ minus(a, b)
 multi(a, b)
 devide(a, b)
 
+
+
 /* 課題6 : 関数を使って課題3で作ったビューを生成し戻り値を使って変数に代入しましょう */
 
 func makeView_q6() -> UIView {
@@ -264,4 +266,27 @@ func makeView_q6() -> UIView {
 
 let preview_q6 = makeView_q6()
 
-/*----------------------------------------------------------------------------------*/
+/* 課題6 advance */
+
+func makeView_q6_advance(color1:UIColor, color2:UIColor, color3:UIColor) -> UIView {
+    var redView = UIView(frame: CGRectMake(0, 50, 50, 50))
+    var blueView = UIView(frame: CGRectMake(50, 50, 50, 50))
+    var yellowView = UIView(frame: CGRectMake(100, 50, 50, 50))
+
+    redView.backgroundColor = color1
+    blueView.backgroundColor = color2
+    yellowView.backgroundColor = color3
+
+    var whiteView = UIView(frame: CGRectMake(0, 0, 150, 150))
+    whiteView.backgroundColor = UIColor.whiteColor()
+
+    whiteView.addSubview(redView)
+    whiteView.addSubview(blueView)
+    whiteView.addSubview(yellowView)
+
+    return whiteView
+}
+
+let preview_q6_advance1 = makeView_q6_advance(.blackColor(), .greenColor(), .grayColor())
+
+let preview_q6_advance2 = makeView_q6_advance(.magentaColor(), .orangeColor(), .purpleColor())
