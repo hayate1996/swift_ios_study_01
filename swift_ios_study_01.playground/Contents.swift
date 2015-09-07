@@ -56,7 +56,9 @@ let preview_q1 = view_q1
 /* 課題2：(30,50)の位置に縦100,横100,黄色(yellowColor)のビューを表示してみましょう */
 
 
-
+var view_q2 = UIView(frame: CGRectMake(30, 50, 100, 100))
+view_q2.backgroundColor = UIColor.redColor()
+let preview_q2 = view_q2
 
 
 
@@ -88,12 +90,41 @@ rectView.addSubview(blueView)
 
 /* 課題3：赤・青・黄色の50x50のビューと白の150x150のビューを作り、赤・青・黄色が横に並ぶように白ビューの上に乗せましょう */
 
+var view_q3_red = UIView(frame: CGRectMake(0, 50, 50, 50))
+var view_q3_blue = UIView(frame: CGRectMake(50, 50, 50, 50))
+var view_q3_yellow = UIView(frame: CGRectMake(100, 50, 50, 50))
 
+view_q3_red.backgroundColor = UIColor.redColor()
+view_q3_blue.backgroundColor = UIColor.blueColor()
+view_q3_yellow.backgroundColor = UIColor.yellowColor()
+
+var view_q3_white = UIView(frame: CGRectMake(0, 0, 150, 150))
+view_q3_white.backgroundColor = UIColor.whiteColor()
+
+view_q3_white.addSubview(view_q3_red)
+view_q3_white.addSubview(view_q3_blue)
+view_q3_white.addSubview(view_q3_yellow)
+
+let preview_q3 = view_q3_white
 
 
 /* 課題4：150x150の白ビューの真ん中に、100x100の黄色ビューを乗せて更にその真ん中に、 50x50の赤ビューを乗せましょう */
 
+var view_q4_red = UIView(frame: CGRectMake(0, 0, 50, 50))
+var view_q4_yellow = UIView(frame: CGRectMake(0, 0, 100, 100))
+var view_q4_white = UIView(frame: CGRectMake(0, 0, 150, 150))
 
+view_q4_red.backgroundColor = UIColor.redColor()
+view_q4_yellow.backgroundColor = UIColor.yellowColor()
+view_q4_white.backgroundColor = UIColor.whiteColor()
+
+view_q4_red.center = view_q4_yellow.center
+view_q4_yellow.addSubview(view_q4_red)
+
+view_q4_yellow.center = view_q4_white.center
+view_q4_white.addSubview(view_q4_yellow)
+
+let preview_q4 = view_q4_white
 
 
 
