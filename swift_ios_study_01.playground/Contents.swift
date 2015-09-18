@@ -60,14 +60,6 @@ println(number1 * number2)
 println(number1 / number2)
 
 
-var a = 5
-var b = 7
-var answer = a + b
-
-println(answer)
-
-
-
 /*----------------------------------------------------------------------------------*/
 
 /*
@@ -167,22 +159,32 @@ func helloWorld3(var message:String, var name:String) -> String
 
 /* 課題1 : 変数 a = 5,b = 7を定義してaとbの足し算の結果を、変数 answerに代入してコンソール出力(println)で表示してみましょう */
 
+var a = 5
+var b = 7
 
-
-
-
+var answer = a + b
+println(answer)
 
 /* 課題2 : (30,50)の位置に縦100,横100,黄色(yellowColor)のビューを表示してみましょう */
 
+var view = UIView(frame: CGRect(x: 30, y: 50, width: 100, height: 100))
+view.backgroundColor = UIColor.yellowColor()
 
-
-
+let preview = view
 
 
 /* 課題3 : 関数を使って変数a, 変数bの足し算、引き算の結果を出力する関数を作りましょう */
 
+func add() {
+    println(a + b)
+}
 
+func sub() {
+    println(a - b)
+}
 
+add()
+sub()
 
 /*----------------------------------------------------------------------------------*/
 
