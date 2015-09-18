@@ -33,6 +33,43 @@ println(let_number)
 
 /*----------------------------------------------------------------------------------*/
 
+
+/*
+    演算子
+*/
+
+// 足し算："+"
+println(1 + 1)
+
+// 引き算："-"
+println(1 - 1)
+
+// 掛け算："*"
+println(2 * 6)
+
+// 割り算："/"
+println(6 / 1)
+
+
+// 変数を使う
+
+var number1 = 6
+var number2 = 2
+
+println(number1 * number2)
+println(number1 / number2)
+
+
+var a = 5
+var b = 7
+var answer = a + b
+
+println(answer)
+
+
+
+/*----------------------------------------------------------------------------------*/
+
 /*
     UI表示/CGRect
 */
@@ -59,7 +96,6 @@ blackView.backgroundColor = UIColor.blackColor()
 let backgroundColor = blackView.backgroundColor
 
 let preview2 = blackView
-
 
 /*----------------------------------------------------------------------------------*/
 
@@ -99,6 +135,13 @@ func helloWorld()
 helloWorld()
 
 
+func shopping()
+{
+    println("このカメラが欲しいです。")
+    println("はい、24,000円になります。30,000円からお預かりします。")
+    println("ありがとうございます。")
+}
+
 // 引数を使う
 func helloWorld2(var message:String, var name:String)
 {
@@ -115,43 +158,15 @@ func helloWorld3(var message:String, var name:String) -> String
     return message + name
 }
 
-println(helloWorld3("Hello, world!", "My name is Hanako"))
-
 
 /*----------------------------------------------------------------------------------*/
 
-/*
-    演算子
-*/
 
-// 足し算："+"
-println(1 + 1)
-
-// 引き算："-"
-println(1 - 1)
-
-// 掛け算："*"
-println(2 * 6)
-
-// 割り算："/"
-println(6 / 1)
-
-
-// 変数を使う
-
-var number1 = 6
-var number2 = 2
-
-println(number1 * number2)
-println(number1 / number2)
-
-
-/*----------------------------------------------------------------------------------*/
 /*  課題  https://github.com/hayate1996/swift_ios_study_01  */
 
 
+/* 課題1 : 変数 a = 5,b = 7を定義してaとbの足し算の結果を、変数 answerに代入してコンソール出力(println)で表示してみましょう */
 
-/* 課題1 : 変数aと変数bを用意しaに5、bに7を入れて足し算の結果と引き算の結果をコンソール出力(println)で表示してみましょう */
 
 
 
@@ -163,11 +178,12 @@ println(number1 / number2)
 
 
 
-/* 課題3 : 関数を使って変数a, 変数bを渡して足し算、引き算、掛け算、割り算をして結果を返す関数を作りましょう */
 
-
+/* 課題3 : 関数を使って変数a, 変数bの足し算、引き算の結果を出力する関数を作りましょう */
 
 
 
 
 /*----------------------------------------------------------------------------------*/
+
+
